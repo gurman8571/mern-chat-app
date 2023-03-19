@@ -1,0 +1,103 @@
+.sendbtn{
+
+
+    border-radius:30px;
+    color:#fff;
+    border:none;
+    background: #76b852;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #76b852, #8dc26f);
+    background: -moz-linear-gradient(to top, #76b852, #8dc26f);
+    background: -o-linear-gradient(to top, #76b852, #8dc26f);
+    background: linear-gradient(to top, #76b852, #8dc26f);
+}
+
+.typingIndicatorContainer {
+    display: flex;
+    flex: none;
+    align-items: flex-end;
+ 
+  }
+  
+  .typingIndicatorBubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 40px;
+    margin: 0px 8px;
+    background-color: #f0f1f1;
+    border-radius: 12px;
+  }
+  
+  .typingIndicatorBubbleDot {
+    width: 4px;
+    height: 4px;
+    margin-right: 4px;
+    background-color: #57585a;
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .typingIndicatorBubbleDot:first-of-type {
+    margin: 0px 4px;
+  }
+  
+  .typingIndicatorBubbleDot:nth-of-type(2) {
+    animation-delay: 0.15s;
+  }
+  
+  .typingIndicatorBubbleDot:nth-of-type(3) {
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes bounce {
+    0%,
+    60%,
+    100% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-4px);
+    }
+  }
+  .lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #9ca3af;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #9ca3af transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
